@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Google Font Used : -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+   
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" href="https://play-lh.googleusercontent.com/RyoQTmHnxsxPYabsETmWVXHtLorVh_yOO48hsdv2VmI-Uki4qt5c5vV1cicJODV56A4" type="image/icon type">
+    <title>GCCP Leaderboard</title>
+</head>
+<!-- Formula for calculating Milestone Completion
+    Milestone Progress :
+    =IF(AND(B2>=40,C2>=20),"ULTIMATE",IF(AND(B2>=30,C2>=15),3,IF(AND(B2>=20,C2>=10),2,IF(AND(B2>=10,C2>=5),1,""))))
+-->
+<body>
+<section id="top">
+    <div id="logo-content">
+        <img id="logo" src="res/logo.png" alt="logo-image"/>
+
+        <span class="headers">
+            <h1 style="align-self: flex-start; margin-left: 10%; margin-right: 10%;"><span id="heading" style="color: white;">Google Cloud Career Practitioner Leaderboard</span></h1>
+            <h2 style="align-self: flex-start; margin-left: 10%; margin-right: 10%;">Mukesh Patel School of Technology Management & Engineering</h2>
+<br>
+<p style="align-self: flex-start; margin-left: 10%; margin-right: 10%;" >Last updated on November 15 2022</p>
+<p style="align-self: flex-start; margin-left: 10%; margin-right: 10%;" >Updated at 14:43 IST</p>
+<p style="align-self: flex-start; margin-left: 10%; margin-right: 10%;" >New Program Deadline: 14 December 2022, 23:59 IST. Goodluck!</p>
+</span>
+
+</div>
+
+
+<br>
+<!-- <a style="color: yellow;" target="_blank" href="https://events.withgoogle.com/googlecloudready-facilitator-program/#program-syllabus" >Program Syllabus</a>
+<a style="color: yellow;" target="_blank" href="https://github.com/guys-in-the-cloud/cloud-skill-boosts">Updated Solutions</a> -->
+<br><br>
+</section>
+<br>
+<h3>Leaderboard</h3>
+<p style="align-self: flex-start; margin-left: 10%; margin-right: 10%; color: rgb(0,0,0); font-style: italic"> Note: The top 7 ranks will be shown in the leaderboard. 
+    Date of completetion is obtained from progress report. If multiple participants have completed the ultimate milestone on the same day, 
+    they will share ranks.</p>
+<br>
+<br><br>
+<h3>Progress</h3>
+<p style="align-self: flex-start; margin-left: 10%; margin-right: 10%; color: rgb(0,0,0); font-style: italic; "> Note: Progress is sorted as per total values of quests/skill badges, then, alphabetically with Student Name.</p>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names...">
+<br>
+<br>
+<table id="table">
+    <thead>
+        <tr>
+            <td>Student Name</td>
+            <td># of Courses Completed</td>
+            <td># of Skill Badges Completed</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>AMIT AGARWAL</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Sanyam Shah</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Yug Dipeshkumar Shah </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Tejas Patil</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Hemant Sudhakar Koli</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Keshav Birle</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Sukhdev sahu </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Aryan Khandelwal </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Parth sharma </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Harshal Yogesh Shukl</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Rohini Ramesh Wani</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Shivam Vitthal Naiknavare</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Amit Upadhyay</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Jonty Bhalodiya</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Kunal Vijay Patil</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Gaurav Thakur </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Yug Desai</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>JANHAVI YADAV</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Aruja Shrivastava</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Chaitanya Sharma</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Darshan Rajput </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Gaurav Prakash Wani</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Yash Bhandari</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Kanishka Khandelwal </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Hemant Dnyaneshwar Mahalpure</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>VISHAKHA BAVISKAR</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Mugdha Upadhyay</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Suraj R</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Prathmesh Badgujar</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Dakshita Gupta</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Vasu Choudhary</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>MANHREET KAUR CHHABRA</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Darshan Jain</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Utkarsh Mandloi</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Pranamya Waddin </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Shell Mahajan </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Shriniwas Ahirrao</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Anshika Jaju</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Yogesh Laxman Patil</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Akshat Sethiya</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Aditya Mantri </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>HARSHIT SHAH</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>ADITYA PATIDAR</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>VIVEK JAIN</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Monika Sai Uppuluri </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Keyush Harish Shah</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Harshit Malik</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Priyanshu Agrawal </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Dhruv Gore </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Krishna tikarya</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Sajal Sanjay Sonar  </td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>UTSAV JHA</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<section id="bottom"> 
+<button style="align-self: flex-start; margin-left: 10%; margin-right: 10%;" target="_blank" onclick="window.open('https://github.com/nityoday/gcr-leaderboard');" id="bid">CONTRIBUTE TO THIS PAGE</button>
+</section>
+<section id="bottom"> 
+    <h4 style="align-self: flex-start; margin-left: 10%; margin-right: 10%; color: white;">Contributors:</h4>
+    <div style="width: 30px;"></div>
+    <a  target="_blank" href="https://github.com/nityoday/GCR-leaderboard/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=nityoday/GCR-leaderboard" alt="contributors" ">
+    </a>
+</section>
+
+<script>
+//On change width insert text
+window.onresize = function(event) {
+    if(window.innerWidth <= 1200) {
+        document.getElementById("heading").innerText="GCR Leaderboard";
+    }
+    else if(window.innerWidth <= 400){
+        document.getElementById("heading").innerText="GCR Leaderboard";
+
+    }
+    else {
+        document.getElementById("heading").innerText="Google Cloud Career Practitioner Leaderboard";
+    }
+}
+ 
+ 
+</script>
+</body>
+</html>
